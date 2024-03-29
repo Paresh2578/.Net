@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+@{
+        if(TempData["Success"] != null)
+        {
+            <div class="alert alert-success d-flex align-items-center" role="alert">
+                <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill" /></svg>
+                <div>
+                    @TempData["Success"]
+                </div>
+            </div>
+        }
+    }
+<div class="text-center">
+
+    
+    <h1 class="display-4">Welcome <span>@ViewBag.userName</span></h1>
+</div>
